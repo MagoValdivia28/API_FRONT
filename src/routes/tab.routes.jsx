@@ -3,7 +3,7 @@ import { Feather } from "@expo/vector-icons";
 
 import Home from "../screens/Home";
 import Profile from "../screens/Profile";
-import Category from "../screens/Category";
+import Users from "../screens/users";
 import { user } from "../data/Profile";
 
 const Tab = createBottomTabNavigator();
@@ -46,8 +46,8 @@ const TabRoutes = () => {
       />
 
       <Tab.Screen
-        name="Category"
-        component={Category}
+        name="Users"
+        component={Users}
         options={{
           tabBarIcon: ({ focused }) => (
             <Feather
